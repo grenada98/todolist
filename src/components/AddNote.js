@@ -15,7 +15,8 @@ export const AddNote = (props) => {
     }
     return (
         <div className='add-note'>
-            <input ref={addNote} className='add-note__input' type='text' placeholder='Добавить заметку' onChange={onChange}></input>
+            <input ref={addNote} className='add-note__input' type='text' placeholder='Добавить заметку' onChange={onChange}>
+            </input>
             <button className='add-note__button' disabled={isDisabled} onClick={addNoteInf}>Добавить</button>
         </div>
     );
